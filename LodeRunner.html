@@ -1,0 +1,143 @@
+<html>
+  <!--
+Lode Runner!!! HTML
+
+	*** REESCREVA O TEXTO A SEGUIR! ***
+
+Rodrigo Mendes (55308), Tomás Silva (55749)
+
+O ficheiro "LodeRunner.js" tem de incluir, logo nas primeiras linhas, um comentário
+inicial contendo: o nome e número dos dois alunos que realizaram o projeto;
+indicação de quais as partes do trabalho que foram feitas e das que não foram
+feitas (para facilitar uma correção sem enganos); ainda possivelmente alertando
+para alguns aspetos da implementação que possam ser menos óbvios para o avaliador.
+
+01234567890123456789012345678901234567890123456789012345678901234567890123456789
+-->
+
+  <head>
+    <title>
+      Linguagens e Ambientes de Programação (2019/2020) [Eng.Inf. - DI/FCT/UNL]
+      - 3º projeto prático (Javascript)
+    </title>
+
+    <script type="text/javascript" src="LodeRunner0.js"></script>
+    <script type="text/javascript" src="LodeRunner.js"></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Chelsea+Market&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body onload="onLoad()" style="background-color: #fdfd96;">
+    <p><b>LodeRunner</b> -- Rodrigo Mendes (55308), Tomás Silva (55749)</p>
+    <p>
+      <img
+        src="https://i.ya-webdesign.com/images/lode-runner-png-12.png"
+        alt="Lode Runner Logo"
+        style="
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          width: 15%;
+          height: auto;
+        "
+      />
+    </p>
+    <form name="form1" style="text-align: center;">
+      <canvas
+        id="canvas1"
+        width="504"
+        height="272"
+        style="border: 1px solid #000000; background-color: white;"
+      >
+        Your browser doesn't support the HTML5 CANVAS tag.
+      </canvas>
+      <img
+        src="https://upload-icon.s3.us-east-2.amazonaws.com/uploads/icons/png/13163119481579277184-512.png"
+        alt="Gold"
+        width="100"
+        height="100"
+        style="vertical-align: top; margin-top: 75px; margin-left: 30px;"
+      />
+      <h1
+        style="
+          text-align: center;
+          margin-left: 550px;
+          position: relative;
+          bottom: 120px;
+          right: 5px;
+          font-family: 'Chelsea Market', cursive;
+        "
+        id="goldAmount"
+      ></h1>
+      <p>
+        <input
+          type="button"
+          name="Toggle Music"
+          value="Toggle Music"
+          size="10"
+          OnClick="toggleMusic()"
+          style="cursor: pointer;"
+        />
+      </p>
+
+      <p>
+        <input
+          type="radio"
+          id="level1"
+          name="levelSelector"
+          value="1"
+          checked
+        />
+        <label for="level1">Level 1</label>
+        <input type="radio" id="level2" name="levelSelector" value="2" />
+        <label for="level2">Level 2</label>
+        <input type="radio" id="level3" name="levelSelector" value="3" />
+        <label for="level3">Level 3</label>
+        <input type="radio" id="level4" name="levelSelector" value="4" />
+        <label for="level4">Level 4</label>
+        <input type="radio" id="level5" name="levelSelector" value="5" />
+        <label for="level5">Level 5</label>
+        <input type="radio" id="level6" name="levelSelector" value="6" />
+        <label for="level6">Level 6</label>
+        <input type="radio" id="level7" name="levelSelector" value="7" />
+        <label for="level7">Level 7</label>
+        <input type="radio" id="level8" name="levelSelector" value="8" />
+        <label for="level8">Level 8</label>
+        <input type="radio" id="level9" name="levelSelector" value="9" />
+        <label for="level9">Level 9</label>
+        <input type="radio" id="level10" name="levelSelector" value="10" />
+        <label for="level10">Level 10</label>
+        <input type="radio" id="level11" name="levelSelector" value="11" />
+        <label for="level11">Level 11</label>
+        <input type="radio" id="level12" name="levelSelector" value="12" />
+        <label for="level12">Level 12</label>
+        <input type="radio" id="level13" name="levelSelector" value="13" />
+        <label for="level13">Level 13</label>
+        <input type="radio" id="level14" name="levelSelector" value="14" />
+        <label for="level14">Level 14</label>
+        <input type="radio" id="level15" name="levelSelector" value="15" />
+        <label for="level15">Level 15</label>
+        <input type="radio" id="level16" name="levelSelector" value="16" />
+        <label for="level16">Level 16</label>
+      </p>
+      <p>
+        <input
+          type="button"
+          name="lvlSelect"
+          value="Select Level"
+          size="10"
+          OnClick="selectLevel()"
+          style="cursor: pointer;"
+        />
+      </p>
+    </form>
+    <p>
+      <b>Linguagens e Ambientes de Programação</b> -- 2020 -- <b>FCT/UNL</b>
+    </p>
+    <p><b>Docente:</b> Artur Miguel Dias</p>
+  </body>
+</html>
+<!-- código inicial de AMD/2020 -->
+<!-- vim:set ts=4 sw=4 et: -->
